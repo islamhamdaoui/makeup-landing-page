@@ -88,6 +88,7 @@ header div:last-child div {
 
     width: 50%;
     padding: 100px;
+    z-index: 100;
 }
 
 .left span:first-child {
@@ -109,6 +110,7 @@ color: var(--product-color);
 .left .descreption {
     color: #808080;
     font-size: 1.1rem;
+ 
 }
 
 .buy {
@@ -131,5 +133,6 @@ color: var(--product-color);
     border-radius: 50%;
     filter: blur(100px);
     margin-top: 50px;
+    top: 15%;
     left: 25%;
   }
