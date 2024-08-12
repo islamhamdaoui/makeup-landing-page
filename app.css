@@ -185,12 +185,13 @@ color: var(--product-color);
     position: absolute;
     left: 60%;
     top: 65%;
+    border-radius: 5px;
     
 
 }
 
 
-.why {
+.title {
     
     width: 100%; 
     display: flex;
@@ -198,9 +199,10 @@ color: var(--product-color);
     margin-top: 70px;
 }
 
-.why span {
+.title span {
     font-family: 'Satisfy', cursive;
-    color: var(--product-color);
+    /* color: var(--product-color); */
+    color: black;
     font-size: 2rem;
 }
 
@@ -233,3 +235,28 @@ width: 30%;
 .features div img {
     width: 40px;
 }
+
+
+.reviews {
+ display: flex;
+ padding:30px 100px;
+ justify-content: space-between;
+}
+
+.reviews .review {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    width: 30%;
+
+}
+
+
+.reviews .stars {
+   display: flex;
+}
+
+.stars img {
+    width: 22px;
+    margin-right: 5px;
+}
+
