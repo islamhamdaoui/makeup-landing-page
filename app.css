@@ -5,6 +5,7 @@
 
 *{
     box-sizing: border-box;
+    font-family: "Gotu", sans-serif;  
 }
 body {
   
@@ -24,7 +25,7 @@ header {
     background: transparent;
     position: fixed;
     width: 100%;
-    z-index: 100;
+    z-index: 900;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -70,16 +71,18 @@ header div:last-child div {
 .home {
     display: flex;
     padding-top: 80px;
+
 }
 .home .right{
     width: 50%;
     display: flex;
     justify-content: center;
+    height: fit-content;
 
 }
 
 .home img {
-    height: 70%;
+   width: 53%;
     box-shadow: 0px 0px 15px 1px rgba(176, 111, 49, 0.7);
 
 }
@@ -88,7 +91,9 @@ header div:last-child div {
 
     width: 50%;
     padding: 100px;
+    padding-bottom: 0;
     z-index: 100;
+    height: fit-content;
 }
 
 .left span:first-child {
@@ -110,6 +115,7 @@ color: var(--product-color);
 .left .descreption {
     color: #808080;
     font-size: 1.1rem;
+    font-family: "Gotu", sans-serif;  
  
 }
 
@@ -117,11 +123,13 @@ color: var(--product-color);
     margin-top: 50px;
     color: #fff;
     background-color: var(--product-color);
+    
     width: fit-content;
     padding: 14px 47px;
     border-radius: 100px;
     font-weight: bold;
     cursor: pointer;
+    
     box-shadow: 0px 0px 15px 1px rgba(176, 111, 49, 0.7);
 }
 
@@ -136,3 +144,70 @@ color: var(--product-color);
     top: 15%;
     left: 25%;
   }
+
+
+
+
+
+.aboutProduct {
+    display: flex;
+    /* padding-top: 80px; */
+}
+
+.aboutLeft {
+
+    width: 50%;
+    padding: 100px;
+    padding-top: 40px;
+  position: relative;
+    z-index: 100;
+}
+
+.aboutRight{
+    position: relative;
+    width: 50%;
+   padding: 0 100px 0 0;
+   
+    padding-top: 50px;
+
+}  
+
+.aboutLeft  img {
+    width:80%;
+  
+    box-shadow: 0px 0px 15px 1px rgba(176, 111, 49, 0.7);
+
+
+}
+
+.aboutLeft img:nth-child(2){
+    width: 25%;
+    position: absolute;
+    left: 60%;
+    top: 65%;
+    
+
+}
+
+
+.why {
+    
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.why span {
+    font-family: 'Satisfy', cursive;
+    color: var(--product-color);
+    font-size: 2rem;
+}
+
+.aboutRight h2 {
+    font-size: 2.3rem;
+}
+
+.aboutRight .circle {
+    opacity: 0.6;
+} 
