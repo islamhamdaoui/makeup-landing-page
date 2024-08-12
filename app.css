@@ -168,7 +168,7 @@ color: var(--product-color);
     width: 50%;
    padding: 0 100px 0 0;
    
-    padding-top: 50px;
+    padding-top: 70px;
 
 }  
 
@@ -211,3 +211,25 @@ color: var(--product-color);
 .aboutRight .circle {
     opacity: 0.6;
 } 
+
+.features {
+    display: flex;
+    margin-top: 70px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.features div{
+display: flex;
+flex-direction: column;
+align-items: center;
+border: 1px dashed rgba(176, 111, 49, 0.5);
+
+padding:20px 10px;
+border-radius: 10px;
+width: 30%;
+}
+
+.features div img {
+    width: 40px;
+}
