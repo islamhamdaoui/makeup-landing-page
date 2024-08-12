@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Info</title>
+    <style>
+        .info-content {
+            display: none;
+            /* Add any additional styling here */
+        }
+
+        .title {
+            cursor: pointer;
+            font-weight: bold;
+            margin: 10px 0;
+            /* Add any additional styling here */
+        }
+    </style>
+</head>
+<body>
+    <div class="info-container">
+        <div class="title" onclick="toggleInfo('ingredients')">
+            Ingredientssssssssssssssssssssssssssed
+            <img src="icons/down.png" alt="">
+        
+        </div>
+        <div id="ingredients" class="info-content">
+            
+            <p>List of ingredients...</p>
+          
+        </div>
+        
+        <div class="title" onclick="toggleInfo('faq')">FAQ</div>
+        <div id="faq" class="info-content">
+            
+            <p>Frequently asked questions...</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleInfo(id) {
+            const content = document.getElementById(id);
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

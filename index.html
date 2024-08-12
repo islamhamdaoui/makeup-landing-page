@@ -45,7 +45,7 @@
     <div class="aboutProduct">
         <div class="aboutLeft">
             <img src="woman.webp" alt="">
-            <img src="product.webp" alt="">
+           <div class="product-img"> <img src="product.webp" alt=""></div>
 
         </div>
 
@@ -79,17 +79,85 @@
 
             </div>
 
+            <div class="info-container">
+                <div class="titles" onclick="toggleInfo('ingredients', 'icon-ingredients')">Ingredients
+                    <img src="icons/down.png" id="icon-ingredients" class="icon">
+                </div>
+                <div id="ingredients" class="info-content">
+                    <p>AQUA/WATER/EAU, DIMETHICONE, TALC, PEG-10 DIMETHICONE, TRIMETHYLSILOXYSILICATE, POLYPROPYLENE, ISODODECANE, CETYL PEG/PPG-10/1 DIMETHICONE, NYLON-12, HDI/TRIMETHYLOL HEXYLLACTONE CROSSPOLYMER, PHENOXYETHANOL, SODIUM CHLORIDE, HYDROGEN DIMETHICONE, GLYCERIN, MAGNESIUM SULFATE, SODIUM DEHYDROACETATE, DISTEARDIMONIUM HECTORITE, ALUMINUM HYDROXIDE, METHICONE, BENZOIC ACID, DEHYDROACETIC ACID, PROPYLENE CARBONATE, ETHYLHEXYLGLYCERIN, PARFUM/FRAGRANCE, SILICA, BIOSACCHARIDE GUM-4, PENTAERYTHRITYL TETRA-DI-T-BUTYL HYDROXYHYDROCINNAMATE, ANANAS SATIVUS (PINEAPPLE) FRUIT EXTRACT, CARICA PAPAYA (PAPAYA) FRUIT EXTRACT, PAULLINIA CUPANA SEED EXTRACT, POTASSIUM SORBATE, TOCOPHEROL, SORBIC ACID. MAY CONTAIN/PEUT CONTENIR (+/-): TITANIUM DIOXIDE (CI 77891), IRON OXIDES (CI 77491, CI 77492, CI 77499).</p>
+                </div>
+                
+                <div class="titles" onclick="toggleInfo('how', 'icon-how')">How to
+                    <img src="icons/down.png" id="icon-how" class="icon">
+                </div>
+                <div id="how" class="info-content">
+                    <ul>
+                    <li>Be sure to prep skin with Fenty Skin Hydra Vizor SPF 30 Moisturizer before applying foundation, especially if your skin is dry. After moisturizing, prep skin with Pro Filt’r Instant Retouch Primer to smooth the look of pores and absorb shine, for smoother foundation application and extended makeup wear.</li>
+                        <li>Always shake before use to activate. When testing shades, remember to let matte foundations dry completely to find your perfect match.
+                            For full coverage: Apply 1-2 pumps of Pro Filt’r Foundation on the back of your hand. Using the Full-Bodied Foundation Brush 110, dot product onto the center of your face and blend outward.</li>
+                            <li>
+                                For medium, customizable coverage: Apply 1 pump of Pro Filt’r Foundation to the back of your hand. Using a damp Precision Makeup Sponge 100, begin applying product at the center of your face, or wherever coverage is desired, pressing foundation into skin and blending outward.
+                            </li>
+                </ul>
+            
+                        
+                </div>
+            
+                <div class="titles" onclick="toggleInfo('faq', 'icon-faq')">FAQ
+                    <img src="icons/down.png" id="icon-faq" class="icon">
+                </div>
+                <div id="faq" class="info-content">
+                    <b>What are the benefits of Pro Filt’r Soft Matte Foundation?</b>
+                    <ul>
+                        <li>Fights heat, sweat + shine with its Climate-Adaptive Technology</li>
+                        <li>Instantly smooths and diffuses the look of pores            </li>
+                        <li>Stays undetectable on skin so you always look like you            </li>
+                    </ul>
+                    <b>
+                        What did you change in the refined shades? Undertones, etc?
+                    </b>
+                    <p>After extensive consumer testing and rigorous research, we introduced 9 new shades that match a wider range of undertones.
+            
+                    </p>
+                    <b>Why did we refine the 9 shades?</b>
+                    <p>Because we’re always working to make sure YOUR SHADE’S BEEN MADE. These 9 new shades match a wider range of undertones.
+            
+                    </p>
+                </div>
+            </div>
+            
 
 
 
         </div>
+
+        
     </div>
 
 
-    <div class="title second" > 
-        <span>Review Highlights        </span>
-      </div>
+   
 
+
+
+<div class="customer">
+    <h2>Need Help?    </h2>
+    <p>Our customer service will be happy to help you.    </p>
+    <div>Get in Touch</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="title second" > 
+    <span>Review Highlights        </span>
+  </div>
 <div class="reviews">
 
     <!-- review 1 -->
@@ -133,5 +201,18 @@
 
 </div>
 
+<script>
+    function toggleInfo(contentId, iconId) {
+        const content = document.getElementById(contentId);
+        const icon = document.getElementById(iconId);
+        if (content.style.display === "none" || content.style.display === "") {
+            content.style.display = "block";
+            icon.src = "icons/up.png";
+        } else {
+            content.style.display = "none";
+            icon.src = "icons/down.png";
+        }
+    }
+</script>
 </body>
 </html>
